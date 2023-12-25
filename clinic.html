@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Appointment System</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="clinic.css">
+        
+    </head>
+    <body>
+        <div class='row'>
+            <div class='column left'><img class='doctorimg' src="doctor.jpg" alt="doctor"></div>
+            <div class="column right">
+                <h3>Dr. Manik Dalvi</h3>
+                <p>Obstetrics & Gynecology</p>
+                <button id="profile" class='profile'>View Profile</button>
+            </div>
+        </div>
+        <hr>
+        <div class="details">
+          <div class="details lefty">
+            <div class="appointment">
+              <h3>Book Appointment</h3>
+              <p class="a">Select your Consultation Type</p>
+              <p class="b">Fees approx ₹ 500</p>
+              <p>(pay at clinic)</p>
+            </div>
+            <br><br><br>
+            <div>
+              <h2>Clinic Name</h2>
+              <br>
+              <form action="/action" class="clinicadd">
+                  <input type="radio" id="clinic" name="clinic name" value="Manik Dalvi's Clinic">
+               <label for="clinic name" onclick="reload()">
+                Manik Dalvi's Clinic, Kalyan Naka, Rk Business Centre, Opp. Bopal Nagar, Maharashtra, 421302</label><br>
+              </form>
+            </div>
+
+          </div>
+          <div class="details righty">
+            <div class="icon-container">
+              <div class="icon">
+                <i class="fa-solid fa-house-chimney-medical"></i>
+                <p>In-Clinic</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+                <p>Audio</p>
+              </div>
+              <div class="icon"><i class="fa-solid fa-video"></i><p>Video</p></div>
+            </div>
+          </div>
+        </div>
+        
+        <br><br>
+<main>
+  <div id="date-grid">
+    <div id="prevBtn"><button id="prevBtn">&lt</button></div>
+    <div><p id="date1">Today <p id="slot1">no slots available</p></p></div>
+    <div><p id="date2">Tomorrow <p id="slot2">8 slots available</p></p></div>
+    <div><p id="date3">Wed, 27 Dec <p id="slot3">8 slots available</p></p></div>
+    <div id="nextBtn"><button id="nextBtn">&gt</button></div>
+  </div>
+  <hr>
+
+        <div class="grid-container">
+          <div class="grid-item">10:00 AM </div>
+          <div class="grid-item">10:15 AM</div>
+          <div class="grid-item">10:30 AM</div>  
+          <div class="grid-item">10:45 AM</div>
+          <div class="grid-item">11:00 AM</div>
+          <div class="grid-item">11:15 AM</div>  
+          <div class="grid-item">11:30 AM</div>
+          <div class="grid-item">11:45 AM</div>
+        </div>
+
+        <br>
+        <div class="continue"><button type="button" class="button button2">CONTINUE</button></div>
+        <br><br>
+ </main>       
+        <div class="ques">
+          <br>
+          <h1 class="h1">Frquently asked questions</h1><br>
+          <div class="faq">
+            <button class="accordion">
+              What are the payment options available?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="ans">
+              <p>E.g, You can pay using a variety of methods such as Internet Banking, Debit/Credit card, Wallet, UPI, and so on.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq">
+            <button class="accordion">
+              Do we serve all over India?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>We are currently based in Bhiwandi, however, we offer services nationwide via online consultations.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              We are the walk-in options available?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>We offer services at our clinics located at Bhiwandi</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Are online consultations available?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>Yes, we offer teleconsultation and onlineservices. Book an appointment at link provided.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              How long will my appointment take?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>The length of your appointment is determined by the condition or injuries being treated, as well as whether or not x-rays or an MRI are required. Please allow at least one hour for doctors to provide personalized attention and high-quality care.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Is any referral required for appointments?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>No, we do not require a referral for the appointments.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              How can I book an appointment?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>You could possibly visit our clinic website and book an easy going appointment. Also, can have a voice or video chat with the doctor for the available free slots.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Do I need to bring anything at my first appointment?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="ans">
+              <p>You may bring the following documents, if available: ID Proof Prior medication list Any prior diagnosis documentation X-RAY reports</p>
+            </div>
+          </div>
+
+          <br><br><br>
+
+        </div>
+        <br><br><br>
+
+
+        <script src="clinic.js"></script>
+
+
+    </body>
+</html>
